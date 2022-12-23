@@ -1,0 +1,126 @@
+
+.form1 {
+    width: 1440px;
+    height: 72px;
+    background: #0B2239;
+    display: flex;
+}
+ 
+.TextForm1{
+    width: 922px;
+    height: 40px;  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 154%;
+    color: #FFFFFF;
+ 
+    margin-top: 16px;
+    margin-bottom:16px;
+    margin-right:0px;
+    margin-left: 120px; 
+}
+.AForm1{
+    width: 86px;
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4AD295;
+    margin-top: 26px;
+    margin-bottom:26px;
+    margin-right: 20px;
+}
+ 
+.ButtonForm1{
+    padding: 8px 10px;
+    gap: 10px;
+    width: 130px;
+    height: 36px;
+    background: #4AD295;
+    border-radius: 2px; 
+    align-items: center;
+    border: none;
+    margin-top: 18px;
+    margin-bottom:18px ;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.form2 {
+    width: 1440px;
+    height: 52px;
+    background: #2B2627;
+    box-shadow: 0px 12px 24px -6px rgba(96, 96, 96, 0.15), 0px 0px 1px rgba(96, 96, 96, 0.1);
+    display: flex;
+}
+
+.Picture1Form2{
+    width: 16px;
+    height: 16px;
+    background: url(../images/image\ 11.png);
+    margin-top: 18px;
+    margin-bottom:18px;
+    margin-right:0px;
+    margin-left: 345.5px; 
+}
+
+.TextForm2{
+    width: 689px;
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    margin-top: 16px;
+    margin-bottom:16px;
+    margin-right:20px;
+    margin-left: 8px; 
+}
+.hrefform2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.Picture2Form2{
+    width: 16px;
+    height: 16px;
+    background: url(../images/image10.png);
+    margin-top: 18px;
+    margin-bottom:18px;
+    margin-right:345.5px;
+    margin-left: 0px;   
+}
+
+/*
+z-index-встановлення елемента на передній/задній план   z-index: 1/auto;
+
+position: static; -> елемент з зафіксованими координатами та його неможливо посунути
+position: relative; -> елемент можна зсувати та він залежний лише від себе, його зсув не впливає на інші елементи
+position: absolute; -> елемент розташовується зважаючи на сусідні елементи, якщо їх немає то від сторінки
+
+display: flex; -> дозволяє розмістити елементи горизонтально
+
+flex: none; -> елемент не гибкий, його розміри повністю залежать від заданих висоти та ширини
+order: 0; -> порядок розміщення елементів в області
+flex-grow: 0; -> визначення області яку займає кожен з елементів
+
+line-height -> задає інтервал між рядками
+padding -> задає відступи навколо елемента -> top | right | bottom | left 
+align-items -> розміщує всі елементи області за заданим параметром
+gap (grid-gap) -> задає відступи між елементами не з країв а між ними
+*/
