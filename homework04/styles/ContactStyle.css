@@ -18,7 +18,6 @@
 }
 
 .ContactText{
-    position: absolute;
     width: 434px;
     height: 64px;
     font-family: 'Lato';
@@ -27,7 +26,6 @@
     font-size: 14px;
     line-height: 140%;
     text-align: justify;
-    margin: 0px;
     color: #000000;
  
     margin: 96px 11px 0px 0px;
@@ -99,8 +97,6 @@
 }
  
 .SelectServices{
-    box-sizing: border-box;
- 
     width: 540px;
     height: 60px;
  
@@ -118,7 +114,6 @@
 }
 
 .SubmitForm{
-    box-sizing: border-box;
     width: 160px;
     height: 50px;
     background: #ED4C5C;
