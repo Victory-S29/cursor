@@ -1,0 +1,176 @@
+ 
+.Group4{
+    position: relative;
+    width: 259px;
+    height: 264px;
+    margin: 85px 30px 86px 161px;
+}
+
+.Group4Title{
+    width: 65px;
+    height: 22px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #101010;
+    margin: 0px 189px 33px 5px
+}
+
+.Group4Text{
+ 
+    width: 254px;
+    height: 54px;
+ 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+ 
+    color: #101010;
+    
+ 
+    margin-bottom: 141px;
+    margin-left: 5px;
+  
+}
+
+.Group4Copyright{
+    width: 155px;
+    height: 14px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #101010;
+}
+
+.Group5{
+    position: relative;
+    width: 254px;
+    height: 164px;
+    margin: 85px 30px 186px 30px;
+}
+
+.Group5Title{
+    width: 67px;
+    height: 22px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+    margin: 0px 187px 28px 0px;
+}
+
+.Group5Ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.Group5Href{
+    width: 254px;
+    height: 114px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #000000; 
+    margin: 0px;
+    text-decoration: none;
+
+}
+ 
+.Group6{
+    position: relative;
+    width: 122px;
+    height: 128px;
+    margin: 85px 166px 222px 30px;
+}
+
+.Group6Title{
+    width: 101px;
+    height: 22px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #101010;
+    margin: 0px 21px 33px 0px;
+}
+
+.Group6Info{
+    width: 122px;
+    height: 14px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #101010;
+    text-decoration: none;
+}
+.Group6A{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.Group6Phone{
+    width: 96px;
+    height: 14px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #121212;
+    text-decoration: none;
+}
+
+.Group6Icons{
+    display: flex;
+    position: absolute;
+    width: 66px;
+    height: 14px;
+    justify-content: space-between;
+    margin: 20px 56px 0px 0px;
+}
+ 
+.Group7{  
+    position: relative;
+    width: 96px;
+    height: 22px;
+    margin: 85px 322px 328px 0px;
+}
+
+.Group7Title{
+    width: 96px;
+    height: 22px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+ 
+    text-align: center;
+ 
+    margin: 0px;
+}
+
+.imgGroup7{
+    width: 216px;
+    height: 31px;
+    background: url(../images/Cards.png);
+    margin: 33px 196px 264px 0px;
+}
