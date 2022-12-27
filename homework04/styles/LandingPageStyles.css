@@ -19,11 +19,11 @@ body {
     display: flex;
 }
 .footer{
-    position: absolute;
     width: 100%;
     height: 435px;
     left: 0px;
     top: 1045px;
     background: #FAFAFA;
     display: flex;
+    margin-top: 10px;
 } 
