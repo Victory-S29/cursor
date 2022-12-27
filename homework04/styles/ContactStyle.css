@@ -7,14 +7,14 @@
 .ContactTitle{
     position: absolute;
     width: 445px;
-    height: 107px;
+    height: 87px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
     color: #000000;
-    margin: 0px 0px 53px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .ContactText{
@@ -28,7 +28,7 @@
     text-align: justify;
     color: #000000;
  
-    margin: 96px 11px 0px 0px;
+    margin: 96px 0px 0px 0px;
 }
 
 .form{
