@@ -5,12 +5,12 @@ body{
     min-width: 1440px;
 }
 main{
+    padding: 10px 0px 0px 10px;
     background-color: #202124;
     width: 100%;
     min-height: 2000px;
 }
 table {
-    position: absolute;
     border-spacing: 0;
     border-collapse: separate;
     width: 900px;
@@ -53,7 +53,7 @@ th, td {
     border-left: 5px solid  transparent; /*transparent - встановлює прозорість*/
     border-right: 5px solid  transparent;
     border-top: 5px solid rgba(255,255,255);
-    margin: 7px 0px 6px 5px ;
+    margin: 10px 0px 6px 10px ;
  
 }
 .name-text{
@@ -81,3 +81,12 @@ th, td {
     justify-content: space-between;
     width: 22px;
 }
+
+img{
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    margin: 3px 3px 3px 4px;
+}
+
+ 
