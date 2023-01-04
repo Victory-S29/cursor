@@ -3,12 +3,13 @@ body{
     height: auto;
     width: 100%;
     min-width: 1440px;
+    min-height: 3000px;
 }
 main{
     padding: 10px 0px 0px 10px;
     background-color: #202124;
     width: 100%;
-    min-height: 2000px;
+    min-height: 3000px;
 }
 table {
     border-spacing: 0;
@@ -34,12 +35,10 @@ th, td {
 }
  
 .ellipsis-td{
- 
     display: flex;
-     justify-content: flex-end;
-     padding-right: 15px;
-     padding-left: 0px;
-
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-left: 0px;
 }
 /*---------------------------------------------------------*/
 .name-class{
@@ -54,13 +53,19 @@ th, td {
     border-right: 5px solid  transparent;
     border-top: 5px solid rgba(255,255,255);
     margin: 10px 0px 6px 10px ;
- 
 }
 .name-text{
     display: block;
     margin: auto 0px;
 }
 
+.ellipsis{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 22px;
+}
 .point{
     background-color: rgba(255,255,255,.5);
     border-radius: 5px;
@@ -74,13 +79,6 @@ th, td {
     width: 5px;
     height: 5px;
 }
-.ellipsis{
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 22px;
-}
 
 img{
     width: 15px;
@@ -88,5 +86,49 @@ img{
     border-radius: 2px;
     margin: 3px 3px 3px 4px;
 }
+
+/*---------------------------------------------------------*/
+.search-syst{
+    display: flex; 
+    justify-content: flex-end;
+    padding: 10px;
+    align-items: center;
+}
+
+.search-img{
+    width: 17px;
+    height: 17px;
+    margin: 2px 0px 0px 2px;
+    padding: 0px 0px 0px 5px;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+input[type=search] {
+
+    background-color: rgb(199, 199, 199);
+    border: none;
+    border-radius: 4px;
+    opacity: 0.5;
+    width: 185px;
+    height: 30px;
+ 
+    font-size: 16px;
+    color:rgb(0, 0, 0); ;
+
+    outline: none;
+    box-sizing: border-box;
+ 
+    background-image: url('../images/images.png');
+    background-position: 5px 7px; 
+    background-repeat: no-repeat;
+    background-size: 15px;
+
+    margin: 0px;
+    padding: 12px 5px 12px 30px;
+}
+  
 
  
