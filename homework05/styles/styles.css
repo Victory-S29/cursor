@@ -1,0 +1,80 @@
+body{
+    margin: 0px
+}
+main{
+    background-color: #202124;
+    width: 100%;
+    min-height: 2000px;
+}
+table {
+    position: absolute;
+    border-spacing: 0;
+    border-collapse: separate;
+    width: 900px;
+    margin: 30px;
+    background-color: #222325;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 5px;
+}
+th, td {
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    height: 40px;
+    text-align: left;
+    padding-left: 15px;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+.name-file, th{
+    color: rgba(255,255,255);
+}
+.data-file{
+    color: rgba(255,255,255,.5);
+}
+ 
+.ellipsis-td{
+ 
+    display: flex;
+     justify-content: flex-end;
+     padding-right: 15px;
+     padding-left: 0px;
+
+}
+/*---------------------------------------------------------*/
+.name-class{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    width: 100px;
+}
+.arrow-down {
+    display: block;
+    border-left: 5px solid  transparent; /*transparent - встановлює прозорість*/
+    border-right: 5px solid  transparent;
+    border-top: 5px solid rgba(255,255,255);
+    margin: 7px 0px 6px 5px ;
+ 
+}
+.name-text{
+    display: block;
+    margin: auto 0px;
+}
+
+.point{
+    background-color: rgba(255,255,255,.5);
+    border-radius: 5px;
+    width: 5px;
+    height: 5px;
+}
+ 
+.point-second{
+    background-color: rgba(255,255,255);
+    border-radius: 5px;
+    width: 5px;
+    height: 5px;
+}
+.ellipsis{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 22px;
+}

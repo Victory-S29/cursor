@@ -113,6 +113,17 @@
     padding: 21px 0px 20px 31px;
 }
 
+.select-SelectServices:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
 .SubmitForm{
     width: 160px;
     height: 50px;
