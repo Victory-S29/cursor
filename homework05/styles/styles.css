@@ -28,6 +28,8 @@ th, td {
     font-family: "Segoe UI",Arial,sans-serif;
 }
 .name-file, th{
+    box-sizing: border-box;
+    width: 372px;
     color: rgba(255,255,255);
 }
 .data-file{
@@ -45,7 +47,8 @@ th, td {
     display: flex; 
     flex-direction: row;
     align-items: center;
-    width: 100px;
+    box-sizing: border-box;
+    width: 372px;
 }
 .arrow-down {
     display: block;
