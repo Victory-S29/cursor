@@ -1,0 +1,46 @@
+ 
+html{ 
+    background-color: #4B4D59;
+}
+
+.background-section{
+    position: relative;
+    width: 1600px;
+    height: 1200px;
+    background: radial-gradient(121% 121% at 32% 100%, #9799A0 0%, #2C2C2D 100%)  ;
+    border-radius: 0px;
+    margin: 0 auto;
+}
+
+.first-screen{
+    position: absolute;
+    width: 390px;
+    height: 844px;
+    left: 221.84px;
+    top: 179.03px;
+    
+    background: url(../img/main-theme.jpg), linear-gradient(167.95deg, #2E335A 0%, #1C1B33 100%);
+    box-shadow: -40px 60px 150px rgba(11, 10, 10, 0.7);
+    border-radius: 46px;
+    transform: rotate(0.27deg);
+ overflow: hidden;
+}
+
+ 
+
+
+.second-screen{
+    position: absolute;
+    width: 390px;
+    height: 844px;
+    left: 934.83px;
+    top: 182.4px;
+    
+    background: linear-gradient(168.32deg, #1A1C24 1.9%, #57586A 98.29%);
+    box-shadow: -40px 60px 150px rgba(11, 10, 10, 0.7);
+    border-radius: 46px;
+    transform: rotate(0.27deg);
+}
+
+
+ 

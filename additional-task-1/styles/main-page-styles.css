@@ -1,0 +1,215 @@
+
+.main-theme{
+    position: absolute;
+    width: 390px;
+    height: 644px;
+    
+    background: url(.jpg), linear-gradient(167.95deg, #2E335A 0%, #1C1B33 100%);
+    box-shadow: -40px 60px 150px rgba(11, 10, 10, 0.7);
+    border-radius: 46px;
+    
+    
+    z-index: -1;
+}
+
+.setbar{ 
+    position: absolute;
+    height: 47px;
+ 
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.time-format{
+    width: 54px;
+    height: 20px;
+ 
+    
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #FFFFFF;
+    transform: rotate(0.27deg);
+}
+
+.parameters{
+    width: 77.4px;
+    height: 13px;
+    transform: rotate(0.27deg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.parameters-icon{
+ 
+    width: 18px;
+    height: 12px;
+ 
+}
+ 
+
+
+.weather-main{
+    position: absolute;
+    width: 390px;
+    height: 183px;
+    left: 3.51px;
+    top: 103px;
+    
+    transform: rotate(0.27deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.h1-main-page{
+ 
+    width: 129px;
+    height: 41px;
+ 
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.374px;
+
+    color: #FFFFFF;
+ 
+}
+ 
+.temp-text{
+    width: 127px;
+    height: 70px;
+
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 96px;
+    line-height: 70px;
+
+    text-align: center;
+    letter-spacing: 0.374px;
+    
+    color: #FFFFFF;
+ 
+    margin-top: 11.4px;
+    margin-bottom: 11.43px;
+}
+
+.h2-main-page{
+ 
+    width: 115px;
+    height: 48px;
+  
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #FFFFFF;
+ 
+}
+
+
+.rectangle-1{
+    position: absolute;
+    width: 390px;
+    height: 500px;
+ 
+    top: 344px;
+    
+    background: linear-gradient(180deg, rgba(58, 63, 84, 0) 0%, #3A3F54 100%);
+ 
+}
+
+
+.rectangle-2{
+    position: absolute;
+    width: 390px;
+    height: 325px;
+ 
+    bottom: 0px;
+
+    background: linear-gradient(135.73deg, rgba(46, 51, 90, 0.2) 11.01%, rgba(28, 27, 51, 0.2) 95.06%);
+    box-shadow: inset 0px 1px 0px #FFFFFF;
+    backdrop-filter: blur(25px);
+ 
+    border-radius: 44px 44px 0px 0px;
+ 
+}
+
+
+
+.header-part{
+    position: absolute;
+    width: 391px;
+    height: 49px;
+    left: 1.54px;
+    top: 0px;
+
+    transform: rotate(0.27deg);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.forecast-1{
+    position: absolute;
+    width: 122px;
+    height: 41px;
+    left: 12.15px;
+    top: 14.94px;
+    text-align: center;
+}
+
+.forecast-2{
+    position: absolute;
+    width: 127px;
+    height: 41px;
+    left: 235.14px;
+    top: 13.89px;
+    text-align: center;
+}
+
+
+ 
+.hourly-forecast{
+    width: 122px;
+    height: 41px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 41px;
+ 
+    letter-spacing: 0.374px;
+    color: rgba(191, 192, 201, 0.53);
+}
+.weekly-forecast{
+    width: 127px;
+    height: 41px;
+ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 41px;
+  
+    letter-spacing: 0.364px;
+ 
+    color: rgba(191, 192, 201, 0.53);
+}
