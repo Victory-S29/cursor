@@ -142,7 +142,7 @@
     position: absolute;
     width: 137px;
     height: 41px;
-    left: 235.14px;
+    left: 225.14px;
     top: 13.89px;
     text-align: center;
 }
@@ -169,6 +169,7 @@
     line-height: 41px;
     letter-spacing: 0.364px;
     color: rgba(191, 192, 201, 0.53);
+   
 }
 
 .underline{ 
@@ -385,7 +386,7 @@
     top: 3.01px;
     border-radius: 50%;
     background: linear-gradient(138.22deg, #F5F5F9 16.11%, rgba(218, 223, 231, 0.7) 85.86%);
-    box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.5), 10px 10px 20px rgba(13, 20, 49, 0.5), inset 1px 1px 0.5px #FFFFFF;
+    box-shadow: -10px -10px 20px rgb(255 255 255 / 20%), 10px 10px 20px rgb(13 20 49 / 50%), inset 1px 1px 0.5px #ffffff;
     transform: rotate(0.27deg);
 }
 
