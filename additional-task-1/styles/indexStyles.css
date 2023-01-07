@@ -1,4 +1,3 @@
- 
 html{ 
     background-color: #4B4D59;
 }
@@ -23,11 +22,8 @@ html{
     box-shadow: -40px 60px 150px rgba(11, 10, 10, 0.7);
     border-radius: 46px;
     transform: rotate(0.27deg);
- overflow: hidden;
+    overflow: hidden;
 }
-
- 
-
 
 .second-screen{
     position: absolute;
@@ -35,7 +31,6 @@ html{
     height: 844px;
     left: 934.83px;
     top: 182.4px;
-    
     background: linear-gradient(168.32deg, #1A1C24 1.9%, #57586A 98.29%);
     box-shadow: -40px 60px 150px rgba(11, 10, 10, 0.7);
     border-radius: 46px;
