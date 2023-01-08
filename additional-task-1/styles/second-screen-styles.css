@@ -1,0 +1,99 @@
+.rectangle-for-weather{
+    position: absolute;
+    width: 466px;
+    height: 672px;
+    left: -34.82px;
+    top: 171.82px;
+    
+    background: linear-gradient(135.73deg, rgba(46, 51, 90, 0.2) 11.01%, rgba(28, 27, 51, 0.2) 95.06%);
+    box-shadow: inset 0px 1px 0px #FFFFFF;
+    backdrop-filter: blur(25px);
+ 
+    border-radius: 44px 44px 0px 0px;
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 18.38px;
+
+    padding: 20.31px 59.09px 0px 67.22px;
+}
+ 
+.weather-box{
+ 
+    box-sizing: border-box;
+ 
+    width: 342px;
+    height: 184px;
+  
+    background: linear-gradient(90deg, #2B2E3B 10.25%, #494A4F 103.55%);
+    transform: rotate(0.27deg);
+    border-radius: 14% 67% 20% 18% / 15% 48% 21% 19%;
+    padding: 58.09px 24.69px 20.88px 20.09px;
+}
+
+.bottom-text{
+    display: flex;
+    flex-direction: row;
+    margin-top: 23.55px;
+    align-items:center;
+}
+.celsium-parametr{ 
+    width: 95px;
+    height: 41px;
+ 
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 41px;
+ 
+    letter-spacing: 0.374px;
+    color: #FFFFFF;
+ 
+}
+
+.place-temp{
+ 
+    width: 136px;
+    height: 41px;
+  
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+ 
+    letter-spacing: -0.078px;
+ 
+    color: rgba(235, 235, 245, 0.6);
+
+ 
+}
+
+.forecast-text{
+ 
+    width: 53px;
+    height: 18px;
+ 
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+ 
+    text-align: right;
+    letter-spacing: -0.078px;
+
+    color: #FFFFFF;
+ 
+    margin-left: 108.09px;
+}
+
+.forecast-img{
+ 
+    position: absolute;
+ 
+    right: 3.94px;
+    top: -12.16px;
+ 
+}
