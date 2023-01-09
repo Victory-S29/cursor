@@ -1,25 +1,21 @@
 .rectangle-for-weather{
     position: absolute;
-    width: 466px;
-    height: 672px;
-    left: -34.82px;
-    top: 171.82px;
+    width: 390px;
+    height: 670px;
+ 
+    top: 177px;
     
-    background: linear-gradient(135.73deg, rgba(46, 51, 90, 0.2) 11.01%, rgba(28, 27, 51, 0.2) 95.06%);
-    box-shadow: inset 0px 1px 0px #FFFFFF;
-    backdrop-filter: blur(25px);
- 
-    border-radius: 44px 44px 0px 0px;
- 
+    background: linear-gradient(180deg, rgba(58, 63, 84, 0) 0%, #3A3F54 100%);
+    transform: rotate(0.27deg);
+    
     display: flex;
     flex-direction: column;
     gap: 18.38px;
-
-    padding: 20.31px 59.09px 0px 67.22px;
+    padding: 15.28px 21.07px 0px 29.23px;
+    
 }
  
 .weather-box{
- 
     box-sizing: border-box;
  
     width: 342px;
@@ -53,47 +49,145 @@
 }
 
 .place-temp{
- 
     width: 136px;
     height: 41px;
-  
     font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
- 
     letter-spacing: -0.078px;
- 
     color: rgba(235, 235, 245, 0.6);
-
- 
 }
 
 .forecast-text{
- 
     width: 53px;
     height: 18px;
- 
     font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
- 
     text-align: right;
     letter-spacing: -0.078px;
-
     color: #FFFFFF;
- 
     margin-left: 108.09px;
 }
 
 .forecast-img{
- 
     position: absolute;
- 
     right: 3.94px;
     top: -12.16px;
+}
+
+.montreal-text{
+    width: 129px;
+    height: 41px;
+    margin: 75.62px 131.35px 5.24px 133.45px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.374px;
+    color: #FFFFFF;
+    transform: rotate(0.27deg);
+}
+
+.second-text-second-page{
+    display: flex;
+    flex-direction: row;
+    margin-left: 101.23px;
+    align-items: center;
+}
+
+.second-text-second-page-celsium{
+    width: 38px;
+    height: 41px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 41px;
+
+    text-align: center;
+    letter-spacing: 0.374px;
+
+    color: #FFFFFF;
+    transform: rotate(0.27deg);
+    margin-right: 8.86px;
+}
+
+.line-1{
+    width: 23px;
+    height: 0px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(90.27deg);
+    margin-right: 13.88px;
+}
+
+.second-text-second-page-clear{
+    width: 116px;
+    height: 24px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.38px;
+    
+    color: #FFFFFF;
+    
+    transform: rotate(0.27deg);
+}
+
+#ellipse-1-page-2{
+    position: absolute;
+    width: 286px;
+    height: 32px;
+    left: 65.33px;
+    top: -31.71px;
+    background: #090A0E;
+    filter: blur(30px);
+    transform: rotate(0.27deg);
+    border-radius: 50%;
+}
+
+#rectangle-2{
+    position: absolute;
+    width: 466px;
+    height: 672px;
+    left: -34.82px;
+    top: 171.82px;
+
+    background: linear-gradient(135.73deg, rgba(46, 51, 90, 0.2) 11.01%, rgba(28, 27, 51, 0.2) 95.06%);
+    box-shadow: inset 0px 1px 0px #FFFFFF;
+    backdrop-filter: blur(25px);
  
+    border-radius: 44px 44px 0px 0px;
+    transform: rotate(0.27deg);
+    z-index: -1;
+}
+
+
+#ellipse-1{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 305.74px;
+    top: 516.44px;
+
+    background: conic-gradient(from 180deg at 50% 50%, #090A0E 0deg, #090A0E 95.62deg, rgba(9, 10, 14, 0) 223.13deg, #090A0E 337.5deg, #090A0E 360deg);
+    filter: blur(70px);
+    transform: rotate(0.27deg);
+
+    border-radius: 50%;
 }
