@@ -16,6 +16,7 @@
 }
  
 .weather-box{
+    position: relative;
     box-sizing: border-box;
  
     width: 342px;
