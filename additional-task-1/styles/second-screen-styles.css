@@ -117,6 +117,7 @@
 
     color: #FFFFFF;
     transform: rotate(0.27deg);
+    z-index: 1;
     margin-right: 8.86px;
 }
 
@@ -127,6 +128,7 @@
     border: 1px solid #FFFFFF;
     transform: rotate(90.27deg);
     margin-right: 13.88px;
+    z-index: 1;
 }
 
 .second-text-second-page-clear{
@@ -147,6 +149,7 @@
     color: #FFFFFF;
     
     transform: rotate(0.27deg);
+    z-index: 1;
 }
 
 #ellipse-1-page-2{
