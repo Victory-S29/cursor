@@ -1,0 +1,134 @@
+.third-section{
+    width: 1136.85px;
+    height: 1002.06px;
+    display: flex;
+    flex-direction: column;
+    gap: 149px; 
+    align-items: center;
+    position: relative;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.third-section-h2{
+    width: 405px;
+    height: 52px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+ 
+    text-align: center;
+ 
+    color: #212353;
+}
+
+.third-section-p{
+    width: 584px;
+    height: 58px;
+
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+ 
+    text-align: center;
+ 
+    color: #4B5D68;
+}
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 54px;
+    column-gap: 77px;
+}
+
+.feature{
+    display: flex; 
+    flex-direction: row;
+    gap: 33.28px;
+ 
+}
+
+.feature-img{
+    margin: 22px 0px 0px 0px;
+}
+
+.features-text{
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features-text h3{
+    width: 200px;
+    height: 50px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #212353;
+}
+
+.features-text p{
+    width: 220px;
+    height: 160px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+
+.features-text a{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.features-text a p{
+    width: 87px;
+    height: 26px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #212353;
+}
+
+.features-text a img{ 
+    width: 20px;
+    height: 14px;
+}
+
+.vector-56{ 
+    position: absolute;
+    width: 323.58px;
+    height: 188.28px;
+    bottom: 75px;
+    right: 65px;
+    transform: rotate(-15deg);
+}
+
+
+
