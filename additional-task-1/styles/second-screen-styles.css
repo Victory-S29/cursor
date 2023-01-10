@@ -125,7 +125,7 @@
 .line-1{
     width: 23px;
     height: 0px;
-
+    background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
     transform: rotate(90.27deg);
     margin-right: 13.88px;
