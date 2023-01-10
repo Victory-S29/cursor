@@ -29,6 +29,7 @@ nav ul{
     justify-content: space-between;
     display: flex;
     flex-direction: row;
+ 
 }
 
 nav a{
