@@ -1,0 +1,74 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <style>
+        .link{
+        width: 80px;
+        padding-left: 40px;
+    }
+    .container{
+        background-color: pink;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 400vh;
+    }
+    
+    .slider-custom{
+        width: 100%;
+        background-color: rgb(184, 255, 251);
+    
+    }
+    
+    </style>
+</head>
+<body>
+    <main class="container">
+
+        <div class="slider-custom">
+            <div class="slider-child">
+         
+              <div>
+                <h2>sdasd</h2>
+                <p>sdfsads</p>
+              </div>
+            </div>
+            <div class="slider-child">2</div>
+            <div class="slider-child">3</div>
+            <div class="slider-child">4</div>
+          </div>
+          <div class="actions">
+            <button class="arrow prev">Arrow prev</button>
+            <button class="arrow next">Arrow next</button>
+       </div>
+
+    </main>
+
+
+    
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(".slider-custom").slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      prevArrow: $(".prev"),
+      nextArrow: $(".next"),
+      adaptiveHeight: true,
+    });
+  </script>			
+</body>
+</html>		

@@ -1,0 +1,137 @@
+.first-section{
+    width: 1248px;
+    height: 754px;
+    position:relative;
+}
+
+header{
+    max-width: 1120px;
+    max-height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img{
+    width: 49px;
+    height: 35px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 322px;
+    height: 30px;
+    margin: 0px 418px 0px 121px;
+}
+nav ul{
+    width: 322px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a{
+    width: 35px;
+    height: 26px;
+    font-family: 'Avenir', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+    text-decoration:none;
+}
+
+.main-link{
+    width: 53px;
+    height: 30px;
+    font-weight: 800;
+    color: #212353;
+}
+
+.button-request-demo{
+    width: 210px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+}
+
+.button-text{
+    width: 113px;
+    height: 26px;
+    font-family: 'Avenir', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    color: #212353;
+}
+
+.button-request-demo img{
+    width: 20px;
+    height: 14px;
+}
+/*========End of header========*/
+.headline{
+    width: 645px;
+    height: 464px;
+ 
+    margin-left: 2px;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.headline h1{
+    width: 645px;
+    height: 184px;
+    font-family: 'Avenir', sans-serif;                                         
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 110%;
+    color: #212353;
+}
+
+.headline p{
+    width: 380px;
+    height: 120px;
+    font-family: 'Avenir', sans-serif;                                         
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+
+.headline button{
+    width: 170px;
+    height: 60px;
+    background: #9C69E2;
+    border-radius: 50px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.first-section-img{
+    position: absolute;
+    width: 885px;
+    height: 468px;
+    left: 363px;
+    top: 286px;
+}
