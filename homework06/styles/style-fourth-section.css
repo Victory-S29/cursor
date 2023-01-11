@@ -2,28 +2,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     width: 1118px;
     height: 709px;
- 
     background: #9C69E2;
     border-radius: 50px;
-    margin-bottom: 150px;
-    margin-top: 183px;
+ 
     padding: 60px 76px 130px 93px;
     position: relative;
+
+    margin: 183px 243px 150px 240px;
 }
  
 .fourth-section-title{
     width: 405px;
     height: 52px;
-
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
- 
     color: #FFFFFF;
     margin-top: 49px;
 }
@@ -40,12 +37,9 @@
 .slick-initialized .slick-slide{
     width: 100%;
     height: 220px;
- 
     display: flex;
     flex-direction: row;
     gap: 44.14px;
-
- 
 }
 
 .div-img{
@@ -64,81 +58,64 @@
 .slider-child-text{
     width: 566.46px;
     height: 200px;
- 
 }
 
 .slider-child-text h4{
- 
     width: 250.12px;
     height: 29px;
- 
     font-family: 'Avenir';
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
     line-height: 160%;
- 
     display: flex;
     align-items: center;
     letter-spacing: 0.005em;
- 
     color: #212353;
     margin-top: 20px;
 }
 
 .slider-child-text-website{
- 
     width: 148.6px;
     height: 22px;
- 
     font-family: 'Avenir';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 160%;
- 
     display: flex;
     align-items: center;
     letter-spacing: 0.01em;
- 
-    
     color: #9C69E2;
 }
 
 .slider-child-text-p{
     width: 566.46px;
     height: 130px;
- 
     font-family: 'Avenir';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 180%;
- 
     color: #4B5D68;
     margin-top: 19px;
 }
- 
- 
-
-
-
 
 .slick-dots li.slick-active button:before, .slick-dots li button:before {
     color: #FFF;
     opacity: 1;
- 
 }
+
 .slick-dots li.slick-active button {
     border-radius: 100%;
     background: #F063B8;
     width: 10px;
     height: 10px;
 }
+
 .slick-dots li.slick-active button:before {
     color: transparent;
 }
-
 
 .slick-dots {
     position: absolute;
@@ -147,13 +124,11 @@
     padding: 0;
     margin: 0;
     list-style: none;
- 
     left:0;
     bottom: -105px;
  
 }
  
-
 .buttons{
     display: block;
     position: absolute;
@@ -168,4 +143,3 @@
     border: none;
     cursor: pointer;
 }
- 

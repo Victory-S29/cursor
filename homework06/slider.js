@@ -5,6 +5,5 @@ $(".slider-custom").slick({
     slidesToShow: 1,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
- 
     adaptiveHeight: true,
-    });
+});

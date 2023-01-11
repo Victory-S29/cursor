@@ -1,10 +1,12 @@
 html{
     scroll-behavior: smooth;
+    background: #E5E5E5;
 }
 
 *{
     box-sizing: border-box;
 }
+ 
 .container{
     max-width: 1600px;
     margin: 0 auto;
@@ -12,7 +14,7 @@ html{
     width: 1600px;
     height: 4500px;
     background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
-    padding: 50px 243px 91px 240px;
+    padding: 50px 0px 91px 0px;
 }
 
  
