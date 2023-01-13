@@ -1,0 +1,40 @@
+#section5{
+    width: 1110px;
+    height: 658px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 12px;
+
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: 511px 123px;
+    margin: 0px 165px 70px 165px;
+}
+
+.map{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.second-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.second-row p, .second-row a{
+    width: auto;
+    height: 30px;
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+}
+

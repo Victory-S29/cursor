@@ -1,11 +1,16 @@
 html{
     background:  #000000;
+    scroll-behavior: smooth;
 }
 
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+button, .like, .second-row img, .pointers div{
+    cursor: pointer;
 }
 
 .main-page{
@@ -85,7 +90,7 @@ header{
     justify-content:space-evenly;
 }
 
-.fourth-cell li{
+.fourth-cell li a{
     width: auto;
     height: 37px;
     font-family: 'Playfair Display';
@@ -94,9 +99,11 @@ header{
     font-size: 28px;
     line-height: 37px;
     color: #000000;
+    text-decoration: none;
 }
 
-#Home-page{
+#Home-page a{
+ 
     color: #EDA3B5;
 }
 
