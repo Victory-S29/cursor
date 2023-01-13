@@ -245,11 +245,18 @@ h2{
     margin: 0px 165px 0px 165px;
 }
 
-.card{
+.card-main{
     width: 350px;
     height: 487px;
     background: #FFFFFF;
     box-shadow: 2px 5px 45px rgba(237, 163, 181, 0.25);
+    border-radius: 16px;
+}
+
+.card{
+    width: 350px;
+    height: 487px;
+    background: #FFFFFF;
     border-radius: 16px;
 }
 
