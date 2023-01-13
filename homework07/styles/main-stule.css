@@ -1,0 +1,111 @@
+html{
+    background:  #000000;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-page{
+    position: relative;
+    width: 1440px;
+    height: 4077px;
+    background: #F6F6F6;
+    margin: 0 auto;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr  3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 1440px;
+    height: 153px;
+}
+
+/*first cell - logo*/
+.logo p{
+    font-family: 'Rochester';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    color: #1B2437;
+    margin-left: 165px;
+    margin-top: 16px;
+}
+
+/*second cell - social media*/
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.links ul, .icons ul{
+    display: flex;
+    list-style: none;
+    margin-top: 31px;
+}
+
+.links li, .icons li{
+    margin-left: 40px;
+    text-decoration: none;
+    color: #1B2437;
+    height: 14px;
+    width: 18px;
+}
+
+/*third cell - icons*/
+
+.fa-brands, .fa-solid {
+    color: #1B2437;
+}
+ 
+.icons img{
+    height: 17.29px;
+    width: 26.47px; 
+}
+
+/*fourth cell - nav*/
+.fourth-cell{
+    grid-column-start: 2;
+    position: relative;
+}
+
+.fourth-cell nav{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.fourth-cell ul{
+    display: flex;  
+    margin-top: 24px;
+    list-style: none;
+    justify-content:space-evenly;
+}
+
+.fourth-cell li{
+    width: auto;
+    height: 37px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    color: #000000;
+}
+
+#Home-page{
+    color: #EDA3B5;
+}
+
+.fourth-cell div{
+    position: absolute;
+    width: 34px;
+    height: 3px;
+    top:  67px;
+    left: 196px;
+    background: #EDA3B5;
+    border-radius: 2px;
+}
