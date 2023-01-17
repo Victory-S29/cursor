@@ -1,0 +1,29 @@
+main{
+   display: grid; 
+   grid-template-columns: repeat(4, 60px);
+   grid-template-rows: repeat(6, 60px);
+   gap: 5px;
+}
+
+div{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+}
+
+div:nth-child(4n+3){
+    background-color: rgb(255, 0, 0);
+}  
+
+/* :nth-child(n+X)     all children from the Xth position onward
+:nth-child(-n+x)    all children up to the Xth position       */
+
+
+div:nth-child(n+21):nth-child(-n+23) {
+    background-color: rgb(22, 32, 167);
+}
+
+
+div:nth-child(24){
+    background-color: rgb(255, 0, 0);
+}  
