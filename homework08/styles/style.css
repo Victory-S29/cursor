@@ -55,35 +55,40 @@ button{
  
 
 button::before{
+    content: "";
     width: 200px;
     height: 2px;
-    content: url(../rectangle.png);
+    background: #C4C4C4;
     position: absolute;
+ 
     left: -246px;
-    top: 40px;
+    top: 50px;
 }
 button::after{
+    content: "";
     width: 200px;
     height: 2px;
-    content: url(../rectangle.png);
+    background: #C4C4C4;
     position: absolute;
     right: -246px;
-    top: 40px;
+    top: 50px;
 }
  
 p::before{
+    content: "";
     width: 200px;
     height: 2px;
-    content: url(../rectangle.png);
+    background: #C4C4C4;
     position: absolute;
     left: -246px;
-    top: 32px;
+    top: 42px;
 }
 p::after{
+    content: "";
     width: 200px;
     height: 2px;
-    content: url(../rectangle.png);
+    background: #C4C4C4;
     position: absolute;
     right: -246px;
-    top: 32px;
+    top: 42px;
 }
