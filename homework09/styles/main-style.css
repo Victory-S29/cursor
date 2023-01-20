@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --logo-color:#5282F0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;  
+}
+
+#first-section{
+    max-width: 1440px;
+    min-width: 1265px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 665px;
+    padding: 61px 0px 0px 163px;
+    position: relative;
+    overflow: hidden;
+    background: #F4F6F9;
+}
+
+.title{
+    width: 99px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 133px;
+}
+
+.football{
+    width: 125px;
+    height: 125px;
+    background-color: rgb(76, 204, 87);
+}
+
+#sports{
+    width: 71px;
+    height: 30px;
+    font-family: 'Product Sans';
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: var(--logo-color);
+    font-weight: 700;
+}
+
+#first-section h1{
+    width: 546px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+ 
+    letter-spacing: 0.03em;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.super-fan-status{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    width: 546px;
+    color: #4F4F4F;
+}
+.main-image{
+    position: absolute;
+    right: -130px;
+    bottom: 39px;
+}
+
+#button{
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+button{
+    margin-top: 50px;
+    width: 156.05px;
+    height: 47px;
+ 
+    background: #000000;
+    border-radius: 7.33503px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 12.58px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button img{
+    width: 25.09px;
+    height: 30.78px;
+}
+
+.button-p{
+    width: 75px;
+    height: 12px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+ 
+    display: flex;
+    align-items: flex-end;
+    
+    color: #FFFFFF;
+}
+
+.button-p-2{
+    width: 93.78px;
+    height: 24.97px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.2716px;
+    line-height: 25px;
+
+    display: flex;
+    align-items: flex-end;
+    
+    color: #FFFFFF;
+}
+ 
+.button-p-3{
+    width: 93.78px;
+    height: 21.3px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17.6041px;
+    line-height: 21px;
+    display: flex;
+    align-items: flex-end;
+    
+    color: #FFFFFF;
+}
+
+.button-2-img{
+    width: 25.09px;
+    height: 30.78px;
+}
+
+@media screen and (max-width:720px) {
+    #first-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 360px;
+        height: 525px;
+        padding: 32px 20px 0px 20px;
+    }
+
+    .main-image{
+        display: none;
+    }
+    
+    .title{
+        margin-bottom: 86px;
+    }
+
+    #first-section h1{
+        width: 320px;
+        height: 119px;
+
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #333333;
+        margin-bottom: 33px;
+    }
+
+    .super-fan-status{
+        width: 320px;
+        height: 70px;
+
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+
+        color: #4F4F4F;
+        
+    }
+}
