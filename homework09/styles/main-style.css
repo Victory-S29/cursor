@@ -1,15 +1,20 @@
 *{
     box-sizing: border-box;
 }
-
+ 
 :root{
     --logo-color:#5282F0;
 }
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     width:100%;  
+}
+
+button{
+    cursor: pointer;
 }
 
 #first-section{
@@ -24,7 +29,7 @@ main{
     background: #F4F6F9;
 }
 
-.title{
+header{
     width: 99px;
     height: 32px;
     display: flex;
@@ -33,13 +38,7 @@ main{
     align-items: center;
     margin-bottom: 133px;
 }
-
-.football{
-    width: 125px;
-    height: 125px;
-    background-color: rgb(76, 204, 87);
-}
-
+ 
 #sports{
     width: 71px;
     height: 30px;
@@ -91,7 +90,7 @@ button{
  
     background: #000000;
     border-radius: 7.33503px;
-
+    border: none;
     display: flex;
     flex-direction: row;
     gap: 12.58px;
@@ -105,7 +104,7 @@ button{
 }
 
 .button-p{
-    width: 75px;
+    width: 95px;
     height: 12px;
 
     font-family: 'Roboto';
@@ -156,6 +155,109 @@ button{
     height: 30.78px;
 }
 
+/*===================================================*/
+#second-section{ 
+    height: 592px;
+    max-width: 1440px;
+    min-width: 1265px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#second-section-div-1{
+    position: relative;
+}
+
+.arsenal-chelsea{
+    position: absolute;
+    left: 163px;
+    top: 109px;
+    z-index: 2;
+}
+
+.mach-2{
+    position: absolute;
+    left: 269px;
+    top: 296px;
+}
+
+.section-2-main-photo{
+    position: absolute;
+    width: 805px;
+    height: 592px;
+ 
+    background-image:linear-gradient(270deg, #FFFFFF 5.16%, 
+    rgba(255, 255, 255, 0) 67.14%, 
+    rgba(255, 255, 255, 0.5)),
+    url(../img/section-2-main-photo.png);
+}
+
+
+#second-section-div-2{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+#second-section-div-2 h3{
+    width: 582px;
+    height: 22px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+
+    margin-top: 133px;
+}
+
+#second-section-div-2 h2{
+    width: 426px;
+    height: 37px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+
+    color: #333333;
+}
+
+#second-section-div-2 article{
+    width: 407px;
+    height: 185px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+ 
+    color: #4F4F4F;
+}
+ 
+#second-section-div-2 a{
+    width: 582px;
+    height: 22px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #00ADEE;
+
+    text-decoration: none;
+}
+/*===================================================*/
 @media screen and (max-width:720px) {
     #first-section{
         width: 100%;
@@ -171,7 +273,7 @@ button{
         display: none;
     }
     
-    .title{
+    header{
         margin-bottom: 86px;
     }
 
@@ -205,6 +307,91 @@ button{
         text-align: center;
 
         color: #4F4F4F;
-        
     }
+
+    /*--------------------------*/
+    #second-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 360px;
+ 
+        min-height: 909px;
+        padding: 54px 0px 0px 0px;
+    }
+ 
+    #second-section-div-2 h3{
+        width: 350px;
+        height: 22px;
+        margin-top: 0px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 27px;
+    }
+
+    #second-section-div-2 h2{
+        width: 350px;
+        height: 74px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #second-section-div-2 article{
+        width: 320px;
+        height: 208px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 19px;
+    }
+    
+    #second-section-div-2 a{
+        width: 350px;
+        height: 22px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 22px;
+    }
+    /*---*/
+    #second-section-div-1{
+        position: relative;
+        width: 100%;
+        order: 2;
+    }
+
+    .section-2-main-photo{
+        width: 100%;
+        height: 360px;
+ 
+        background-image: linear-gradient(
+           180deg, 
+            #FFFFFF 5.16%, 
+            rgba(255, 255, 255, 0) 67.14%,
+            rgba(255, 255, 255, 0.5)),
+        url(../img/section-2-main-photo.png);
+ 
+    }
+    
+    .arsenal-chelsea{
+        position: absolute;
+        width: 247.21px;
+        height: 149.58px;
+        top: 70px;
+        left: 20px;
+    }
+
+    .mach-2{
+        position: absolute;
+        left: 92px;
+        top: 198px;
+        width: 247.21px;
+        height: 149.73px;
+    }
+ 
+ 
 }
