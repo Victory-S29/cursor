@@ -74,7 +74,7 @@ header{
     top: 0%;
 }
  
-#button{
+.button{
     display: flex;
     flex-direction: row;
     gap: 36px;
@@ -142,7 +142,7 @@ button{
  
 /*=================================================== */
 
-#second-section{ 
+#second-section, #seventh-section{ 
     max-width: 1440px;
     width: 100%;
     position: relative;
@@ -153,7 +153,7 @@ button{
     background: #FFFFFF;
 }
 
-#second-section-div-1{
+#second-section-div-1, #seventh-section-div-1{
     position: relative;
 }
 
@@ -183,14 +183,14 @@ button{
     url(../img/section-2-main-photo.png);
 }
 
-#second-section-div-2, .third-section-text{
+#second-section-div-2, .third-section-text,  #seventh-section-div-2{
     display: flex;
     flex-direction: column;
     gap: 27px;
     padding-right: 20%;
 }
 
-#second-section-div-2 h3, .third-section-text h3{
+#second-section-div-2 h3, .third-section-text h3, #seventh-section-div-2 h3{
     width: 100%;
     font-family: 'Lato';
     font-style: normal;
@@ -201,7 +201,7 @@ button{
     margin-top: 20%;
 }
 
-#second-section-div-2 h2, .third-section-text h2{
+#second-section-div-2 h2, .third-section-text h2, #seventh-section-div-2 h2{
     width: 100%;
     font-family: 'Lato';
     font-style: normal;
@@ -211,7 +211,7 @@ button{
     color: #333333;
 }
 
-#second-section-div-2 article, .third-section-text article{
+#second-section-div-2 .article, .third-section-text .article, #seventh-section-div-2 .article{
     width: 100%;
     font-family: 'Lato';
     font-style: normal;
@@ -253,7 +253,7 @@ button{
     margin-top: 30%;
 }
 
-.third-section-text article{
+.third-section-text .article{
     width: 92%;
 }
 
@@ -419,6 +419,7 @@ button{
     left: 16%;
     top:35%;
     z-index: 1;
+    cursor: pointer;
 }
 .right-pointer{
     position: absolute;
@@ -428,6 +429,7 @@ button{
     top:38%;
     z-index: 1;
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    cursor: pointer;
 }
 
 .dots{
@@ -442,6 +444,7 @@ button{
     width: 10px;
     height: 11px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .p-2{
@@ -449,6 +452,7 @@ button{
     width: 11px;
     height: 11px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .p-3{
@@ -456,6 +460,7 @@ button{
     width: 11px;
     height: 11px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .p-4{
@@ -463,6 +468,7 @@ button{
     width: 11px;
     height: 11px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .p-5{
@@ -470,6 +476,7 @@ button{
     width: 11px;
     height: 11px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .p-6{
@@ -477,6 +484,7 @@ button{
     width: 11px;
     height: 11px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .p-7{    
@@ -484,6 +492,7 @@ button{
     width: 11px;
     height: 11px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 /* =================sixth=section================= */
@@ -524,7 +533,92 @@ button{
     margin-bottom: 5%;
 }
  
+.section-7-main-photo{
+    max-width: 100%;
+}
 
+#seventh-section-div-2 h2{
+    margin-top: 20%;
+}
+
+#seventh-section-div-2 p{
+    margin-top: 5%;
+}
+
+.seventh-section-button button{
+    margin-top: 5px;
+    margin-bottom: 5%;
+}
+
+/*====================footer===============================*/
+footer{
+    max-width: 1440px;
+    height: 127px;
+    background: #00ADEE;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.footer-name{
+    display: flex;
+    width: auto;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.footer-name img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.footer-name p{
+ 
+    width: auto;
+ 
+    font-family: 'Product Sans';
+    font-size: 24px;
+    line-height: 29px;
+ 
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
+.footer-links ul{
+    width: 70%;
+}
+.footer-links, ul{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    flex-wrap: wrap;
+}
+
+.footer-links a{
+ 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+ 
+    color: #FFFFFF;
+
+    text-decoration: none;
+}
+
+.footer-sm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-sm ul{
+    display: flex;
+    width: 100%;
+    gap: 5%;
+}
 /*===================================================*/
  /* @media screen and (max-width:720px) {
     #sixth-section{
