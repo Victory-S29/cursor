@@ -78,6 +78,7 @@ header{
     display: flex;
     flex-direction: row;
     gap: 36px;
+    flex-wrap: wrap;
 }
 button{
     margin-top: 50px;
