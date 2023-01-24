@@ -623,7 +623,7 @@ footer{
  
 /*===================================================*/
 @media screen and (max-width:720px) {
-    #first-section, #seventh-section{
+    #first-section{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -640,7 +640,7 @@ footer{
         color: var(--logo-color);
     }
     
-    #first-section h1, #seventh-section h1{
+    #first-section h1{
         width: 100%;
         margin-bottom: 4%;
         text-align: center;
@@ -666,7 +666,7 @@ footer{
         justify-content: center;
     }
   
-    #second-section-div-2, #seventh-section-div-2{
+    #second-section-div-2{
         order: 1;
         align-items: center;
         padding: 0% 5% 0% 5%;
@@ -677,7 +677,7 @@ footer{
         width: 100%;
     }
     
-    #second-section-div-2 .article, .third-section-text .article, #seventh-section-div-2 .article{
+    #second-section-div-2 .article, .third-section-text .article{
         width: 100%;
         padding-right: 0%;
     }
@@ -711,7 +711,7 @@ footer{
     .mach-2{
         width: 40%;
         left: 35%;
-        top: 35%;
+        top: 25%;
     }
     /*---*/
 
@@ -744,7 +744,7 @@ footer{
     #fourth-section{
         max-width:720px;
         width: 100%;
-        padding: 5% 10% 10% 5%;
+        padding: 5% 10% 0% 5%;
         background: #FAFAFA;
     }
     
@@ -766,8 +766,8 @@ footer{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, 1fr);
-        gap: 3%;
-        margin-bottom: 15%;
+        gap: 10px;
+        margin-bottom: 0%;
         padding-bottom: 10%;
     }
     .features div{
@@ -844,17 +844,29 @@ footer{
         margin-bottom: 5%;
     }
     /*======*/
+
     #seventh-section{
+        max-width:720px;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
         padding: 2% 0% 0% 0%;
     }
     #seventh-section-div-2{
         order: 0;
+        text-align: center;
+        padding: 0% 5% 0% 5%;
     }
     #seventh-section-div-1{
-        order: 1;  width: 100%;
+        order: 1;  
+        width: 100%;        height: 100%;
     }
     .section-7-main-photo{
         width: 100%;
+        height: 100%;
     }
     #seventh-section-div-2 h2 {
         margin-top: 2%;
