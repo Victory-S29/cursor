@@ -176,7 +176,7 @@ button{
 .section-2-main-photo{
     position: absolute;
     width: 100%;
-    height: 592px;
+    height: 100%;
  
     background-image:linear-gradient(270deg, #FFFFFF 5.16%, 
     rgba(255, 255, 255, 0) 67.14%, 
@@ -272,7 +272,6 @@ button{
 #fourth-section{
     max-width: 1440px;
     width: 100%;
-    background: #00ADEE;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -554,10 +553,10 @@ button{
 /*====================footer===============================*/
 footer{
     max-width: 1440px;
-    height: 127px;
     background: #00ADEE;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    padding: 3% 0% 3% 0%;
 }
 
 .footer-name{
@@ -586,19 +585,20 @@ footer{
     color: #FFFFFF;
 }
 .footer-links ul{
-    width: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
 }
 .footer-links, ul{
     display: flex;
-    width: auto;
-    align-items: center;
-    justify-content: center;
-    gap: 15%;
+     
     flex-wrap: wrap;
 }
 
 .footer-links a{
- 
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
@@ -620,16 +620,186 @@ footer{
     width: 100%;
     gap: 5%;
 }
+ 
 /*===================================================*/
- /* @media screen and (max-width:720px) {
-    #sixth-section{
-        max-width: 720px;
+@media screen and (max-width:720px) {
+    #first-section, #seventh-section{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 3% 0% 0% 0%;
+        max-width:720px;
+        padding: 5% 5% 25% 5%;
+    }
+ 
+    header{
+        margin-bottom: 10%;
+    }
+    
+    #sports{
+        color: var(--logo-color);
+    }
+    
+    #first-section h1, #seventh-section h1{
+        width: 100%;
+        margin-bottom: 4%;
+        text-align: center;
+    }
+    
+    .super-fan-status{
+        text-align: center;
+        width: 100%;
+        color: #4F4F4F;
+    }
+
+    .main-image{
+       display: none;
+    }
+    
+    /*---*/
+    #second-section{ 
+        max-width:720px;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 1fr);       
+        align-items: center;
+        justify-content: center;
+    }
+  
+    #second-section-div-2, #seventh-section-div-2{
+        order: 1;
+        align-items: center;
+        padding: 0% 5% 0% 5%;
+        text-align: center;
+    }
+ 
+    #second-section-div-2 h2, .third-section-text h2{
+        width: 100%;
+    }
+    
+    #second-section-div-2 .article, .third-section-text .article, #seventh-section-div-2 .article{
+        width: 100%;
+        padding-right: 0%;
+    }
+    #second-section-div-2 a{
+        width: auto;
+        margin: 2% auto 2% auto;
+    } 
+
+    .third-section-text a{
+        width: auto;
+        margin: 2% auto 55% auto;
+    } 
+     
+    #second-section-div-1{
+        order: 2; 
+        height: 360px;
+    }
+
+    .section-2-main-photo{
+        width: 100%;
+        height:  100%;
+    }
+
+    .arsenal-chelsea{
+        width: 40%;
+        left: 12%;
+        top: 9%;
+        z-index: 2;
+    }
+        
+    .mach-2{
+        width: 40%;
+        left: 35%;
+        top: 35%;
+    }
+    /*---*/
+
+    #third-section{ 
+        max-width:720px;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .third-section-text {
+        width: 100%;
+        padding: 0% 5% 0% 5%;
+        text-align: center;
+    }
+
+    .third-section-text h3{
+        margin-top: 3%;
+    }
+ 
+    .phone{
+        position: absolute;
+        left: -22%;
+        top: auto;
+        bottom: -3%; 
+        width: 100%;
+    }
+    /*---*/
+    #fourth-section{
+        max-width:720px;
+        width: 100%;
+        padding: 5% 10% 10% 5%;
         background: #FAFAFA;
+    }
+    
+    #fourth-section h2{
+
+        width: auto;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 37px;
+        text-align: center;
+ 
+        color: #333333;
+        margin-bottom: 6%;
+    }
+     
+    .features{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        gap: 3%;
+        margin-bottom: 15%;
+        padding-bottom: 10%;
+    }
+    .features div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .features img{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0px;
+    }
+    
+    .features p{
+        width: auto;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+ 
+        color: #4F4F4F; 
+    }
+    /*---*/
+    #fifth-section{
+        max-width: 720px;
+        width: 100%;
+       
+        padding: 3% 0% 0% 0%;
+        background: #FFFFFF;
     } 
     .card{
         display: none;
@@ -643,4 +813,97 @@ footer{
         display:block;
         justify-self: center;
     }
-}   */
+ 
+    .card1{
+        width: 50%;
+ 
+        margin-bottom: 4%;
+    }
+ 
+    .left-pointer{
+        display: none;
+    }
+
+    .right-pointer{
+        right: 20%;
+        top:26%;
+    }
+    
+    .dots{
+        gap: 7%;
+        width: 20%;
+        margin-bottom: 10%;
+    }
+
+    .sports{
+        width: 100%;
+        gap: 15%;
+        row-gap: 15%;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+    }
+    /*======*/
+    #seventh-section{
+        padding: 2% 0% 0% 0%;
+    }
+    #seventh-section-div-2{
+        order: 0;
+    }
+    #seventh-section-div-1{
+        order: 1;  width: 100%;
+    }
+    .section-7-main-photo{
+        width: 100%;
+    }
+    #seventh-section-div-2 h2 {
+        margin-top: 2%;
+    }
+    .seventh-section-button, .button{
+        width: 100%;
+        flex-wrap: nowrap;
+        display: flex;
+       justify-content: center;
+    }
+
+    /*======*/
+    footer{
+        max-width:720px;
+        background: #00ADEE;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 5% 0% 5% 5%;
+    }
+    
+    .footer-name{
+        margin-bottom: 2%;
+        margin-left: 0%;
+    }
+    
+    .footer-sm{
+        order: 2;
+    }
+
+    .footer-sm ul{
+        display: flex;
+        width: 100%;
+        gap: 2%;  
+        justify-content:flex-start;
+    }
+    .footer-links{
+        order: 3;
+        width: 100%;
+        padding-top: 5%;
+    }
+    .footer-links ul{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10%;
+        flex-wrap: wrap;
+    }
+ 
+}
+
+ 
