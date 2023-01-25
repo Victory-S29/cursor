@@ -1,0 +1,145 @@
+
+#first-section{
+    min-width: 100%;
+    width: 100%;
+    background-color: rgb(38, 32, 46);
+    min-width: 1000px;
+}
+ 
+#first-section img{
+    width: 150px;
+    height: 25px;
+}
+
+/*================================*/
+.first-sword{
+    width: auto;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    display: flex;
+}
+
+.sword-p{
+    width: 150px;
+    height: 25px;
+    z-index: 5;
+}
+
+.sword{
+    margin-top: 10px;
+    width: 100px;
+    height: 5px;
+    border-radius: 0px 20px 20px  0px ;
+    margin-left: -22px;
+    transition: transform 2s ;  
+    z-index: 0;
+}
+ 
+.sword-p:hover  + .sword {
+    transform: scaleX(5);    
+    z-index: 0;
+    transform-origin: center left;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(255, 0, 0) 0px 7px 29px 0px,inset 1px 0px 2px 2px rgb(255, 0, 0);
+}
+ 
+
+/*=====================*/
+.swordf{
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+}
+/*=====================*/
+
+.second-sword{
+    width: auto;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    display: flex;
+    flex-direction: row;
+    animation: second-sword-rotate 5s  infinite;
+}
+
+.sword-p-r{
+    width: 150px;
+    height: 25px;
+    z-index: 5;
+}
+
+.sword-r{
+    margin-top: 10px;
+    width: 400px;
+    height: 5px;
+    border-radius: 0px 20px 20px 0px ;
+    margin-left: -22px;
+    transition: transform 2s ;  
+    z-index: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0, 158, 8) 0px 7px 29px 0px,inset 1px 0px 2px 2px rgb(0, 158, 8);
+}
+ 
+@keyframes second-sword-rotate {
+    0%{
+        transform-origin: left top;
+        rotate: -20deg;
+    }
+    50%{
+        transform-origin: left top;
+        rotate:  -10deg;
+    }
+    100%{
+        transform-origin: left top;
+        rotate: -20deg;
+    }
+}
+ 
+ 
+/*=====================*/
+
+.third-sword{
+    width: auto;
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+    display: flex;
+    flex-direction: row;
+    transform: rotateY(180deg);
+
+    animation: third-sword-rotate 5s  infinite;
+}
+
+.sword-p-b{
+    width: 150px;
+    height: 25px;
+    z-index: 6;
+}
+ 
+.sword-b{
+    margin-top: 10px;
+    width: 400px;
+    height: 5px;
+    border-radius: 0px 20px 20px  0px ;
+    margin-right: -22px;
+    z-index: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0, 4, 255) 0px 7px 29px 0px,inset 1px 0px 2px 2px rgb(47, 0, 255);
+ 
+}
+ 
+@keyframes third-sword-rotate {
+    0%{
+        rotate: -30deg;
+        transform-origin: left;
+    }
+    50%{
+        rotate: 10deg;
+        transform-origin: left;
+    }
+    100%{
+        rotate: -30deg;
+        transform-origin: left;
+    }
+}
