@@ -1,0 +1,40 @@
+ 
+.input-search{ 
+    background-image: url(../img/search-icon.svg);
+    background-position: 30% 45%;
+    background-repeat: no-repeat;
+    background-size: 15px;
+ 
+    font-family: 'Helvetica Neue';
+ 
+    color: #8F8F8F;
+}
+ 
+.input-search:focus{
+    background-image:none;
+}
+
+@media (max-width:768px) {
+    .input-search{ 
+        background-image: none;
+    }
+ 
+}
+ 
+.separator{
+    background: #DBDBDB;
+    height: 1px;
+ 
+}
+ 
+
+.bio-img{
+    width: 22px;
+    height: 22px;
+ 
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
