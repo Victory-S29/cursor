@@ -50,3 +50,7 @@ body{
     width: 680px;
     height: 260px;
 }
+
+button{
+    cursor: pointer;
+}
