@@ -143,6 +143,7 @@ body {
     width: 30%;
     @media screen and (max-width: $sm){
       width: 70%;
+      margin-bottom: 1%;
     }
   }
   .introduction__btn--learn{
@@ -150,7 +151,7 @@ body {
     @include def-text($main-font, normal, 500, 16px, 26px, #091133);
     width: 30%;
     @media screen and (max-width: $sm){
-      width: 50%;
+      width: 70%;
     }
   }
 
