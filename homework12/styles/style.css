@@ -194,7 +194,7 @@ body {
 }
 
 .section-light {
-  margin-bottom: 10%;
+  margin-bottom: 0%;
   overflow: hidden;
 }
 .section-light .light__text {
@@ -260,4 +260,150 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #5D6970;
+}
+
+.section-fast .fast__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding: 5%;
+}
+@media screen and (max-width: 992px) {
+  .section-fast .fast__item {
+    flex-direction: column;
+    margin: 0% auto;
+    padding: 2%;
+    width: 100%;
+  }
+}
+.section-fast .item__img--wrapper {
+  display: flex;
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .section-fast .item__img--wrapper {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section-fast .item__img--wrapper .fast__item--img {
+    width: 60%;
+  }
+}
+.section-fast .fast__text {
+  width: 30%;
+}
+@media screen and (max-width: 1200px) {
+  .section-fast .fast__text {
+    text-align: center;
+    margin: 2% auto;
+    width: 70%;
+  }
+}
+.section-fast .article__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  color: #091133;
+  margin-bottom: 3%;
+}
+.section-fast .article__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #5D6970;
+  width: 85%;
+}
+
+.section-price {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.section-price .price--text {
+  text-align: center;
+  width: 55%;
+}
+.section-price .price__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  color: #091133;
+  margin-bottom: 3%;
+}
+.section-price .price__paragraph {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6F7CB2;
+  margin-bottom: 10%;
+}
+.section-price .price--cost {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  color: #222F65;
+  letter-spacing: 1px;
+}
+.section-price .price--kit {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #37447E;
+  letter-spacing: 1px;
+  margin-bottom: 10%;
+}
+.section-price .price--see {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #5D6970;
+  letter-spacing: 1px;
+  margin-bottom: 2%;
+}
+.section-price .price--btn {
+  background: #111B47;
+  border: none;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 20%;
+}
+.section-price .price-background__img {
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  min-height: 500px;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .section-price .price-background__img {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-price {
+    background: #E7ECFF;
+  }
 }/*# sourceMappingURL=style.css.map */
