@@ -75,6 +75,7 @@ body {
 }
 .nav__container .nav__col--button {
   display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 992px) {
   .nav__container .nav__col--button {
@@ -87,6 +88,7 @@ body {
   }
 }
 .nav__container .nav__btn {
+  width: 30%;
   background: #111B47;
   border: none;
   border-radius: 2px;
@@ -96,6 +98,11 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .nav__container .nav__btn {
+    width: 50%;
+  }
 }
 
 .section-introduction {
@@ -138,12 +145,13 @@ body {
   margin-bottom: 10%;
   display: flex;
   gap: 5%;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 1200px) {
   .section-introduction .introduction--btns {
     margin: 10% auto;
     display: flex;
-    width: 100%;
+    width: 70%;
     justify-content: center;
   }
 }
@@ -159,6 +167,11 @@ body {
   color: #FFFFFF;
   width: 30%;
 }
+@media screen and (max-width: 576px) {
+  .section-introduction .introduction__btn--purchase {
+    width: 70%;
+  }
+}
 .section-introduction .introduction__btn--learn {
   background: none;
   border: 2px solid #091133;
@@ -170,6 +183,11 @@ body {
   line-height: 26px;
   color: #091133;
   width: 30%;
+}
+@media screen and (max-width: 576px) {
+  .section-introduction .introduction__btn--learn {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .section-introduction {
@@ -321,7 +339,7 @@ body {
 }
 
 .section-price {
-  padding: 10%;
+  padding: 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,6 +348,7 @@ body {
 .section-price .price--text {
   text-align: center;
   width: 55%;
+  margin: 10% 10% 0% 10%;
 }
 .section-price .price__title {
   font-family: "Roboto", sans-serif;
@@ -389,6 +408,12 @@ body {
   line-height: 24px;
   color: #FFFFFF;
   width: 20%;
+  margin: 0% 0% 4% 0%;
+}
+@media screen and (max-width: 768px) {
+  .section-price .price--btn {
+    width: 50%;
+  }
 }
 .section-price .price-background__img {
   position: absolute;
@@ -406,4 +431,98 @@ body {
   .section-price {
     background: #E7ECFF;
   }
+}
+
+footer {
+  background: #E7ECFF;
+}
+footer .footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4% 10%;
+  flex-wrap: wrap;
+}
+footer .footer__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #939EA4;
+}
+footer .footer__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 38px;
+  color: #37447E;
+}
+footer .footer__btn {
+  width: 110%;
+  background: #111B47;
+  border: none;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  footer .footer__btn {
+    width: 100%;
+  }
+}
+footer .footer-separator {
+  margin: 0% auto;
+  background: #CDD1D4;
+  height: 1px;
+  width: 90%;
+  justify-self: center;
+}
+footer .footer__links {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 10% 2% 10%;
+  flex-wrap: wrap;
+}
+footer .links__pages {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  gap: 10%;
+}
+@media screen and (max-width: 768px) {
+  footer .links__pages {
+    flex-direction: column;
+  }
+}
+footer .pages__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #929ECC;
+  text-decoration: none;
+}
+footer .links__sm {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  width: 20%;
+}
+@media screen and (max-width: 768px) {
+  footer .links__sm {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer .sm__text {
+  color: #939EA4;
+  width: 8px;
+  height: 16px;
 }/*# sourceMappingURL=style.css.map */

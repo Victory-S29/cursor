@@ -1,4 +1,3 @@
-
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
@@ -10,7 +9,6 @@ $main-font: 'Roboto', sans-serif;
 @mixin def_order($order){
   order: $order;
 }
-
 
 @mixin def-text($font-family, $font-style, $font-weight, $font-size, $line-height, $color){
   font-family: $font-family;
@@ -46,12 +44,10 @@ body {
 }
 
 .nav__container{ 
- 
   .nav__col{
     align-items: center;
     justify-content: center;
   }
-
   .nav__col--list{
     display: flex;    
     align-items: center;
@@ -72,7 +68,6 @@ body {
       @include def-text($main-font, normal, 400, 14px, 24px, #505F98);
     }
   }
-
   .nav__col--title{
     display: flex;
     @media screen and (max-width: $lg) {
@@ -86,9 +81,9 @@ body {
     text-align: center;
     @include def-text($main-font, normal, 900, 26px, 38px, #37447E);
   }
-
   .nav__col--button{
     display: flex;
+    flex-wrap: wrap;
     @media screen and (max-width: $lg) {
       @include def_order(3);
     }
@@ -97,8 +92,12 @@ body {
     }
   }
   .nav__btn{
+    width: 30%;
     @include def-btn(#111B47, none, 2px);
     @include def-text($main-font, normal, 500, 12px, 18px, #FFFFFF);
+    @media screen and (max-width: $md){
+      width: 50%;
+    }
   }
 }
 
@@ -106,16 +105,15 @@ body {
   margin-bottom: 20%;
   overflow: hidden;
   .introduction__text{
-      margin-top: 261px;
-      width: 50%;
-      margin:  10% ;
-      @media screen and (max-width: $xl){
-        text-align: center;
-        margin: 10%  auto;
-        width: 70%;
-      }
+    margin-top: 261px;
+    width: 50%;
+    margin:  10% ;
+    @media screen and (max-width: $xl){
+      text-align: center;
+      margin: 10%  auto;
+      width: 70%;
+    }
   }
- 
   .introduction--title{
     @include def-text($main-font, normal, 500, 50px, 66px, #091133);
     letter-spacing: 1px;
@@ -131,10 +129,11 @@ body {
     margin-bottom: 10%;
     display: flex;
     gap: 5%;
+    flex-wrap: wrap;
     @media screen and (max-width: $xl){
       margin: 10%  auto;
       display: flex;
-      width: 100%;
+      width: 70%;
       justify-content: center;
     }
   }
@@ -142,11 +141,17 @@ body {
     @include def-btn(#111B47,  2px solid #111B47, 2px);
     @include def-text($main-font, normal, 500, 16px, 26px, #FFFFFF);
     width: 30%;
+    @media screen and (max-width: $sm){
+      width: 70%;
+    }
   }
   .introduction__btn--learn{
     @include def-btn(none, 2px solid #091133, 2px);
     @include def-text($main-font, normal, 500, 16px, 26px, #091133);
     width: 30%;
+    @media screen and (max-width: $sm){
+      width: 50%;
+    }
   }
 
   @media screen and (max-width: $xl){
@@ -171,7 +176,6 @@ body {
 .section-light{ 
   margin-bottom: 0%;
   overflow: hidden;
-
   .light__text{
       width: 48%;
       margin: 10%;
@@ -190,7 +194,6 @@ body {
     letter-spacing: 1px;
     margin-bottom: 10%;
   }
-
   .light--articles{
     margin-right: 3%;
     margin-bottom: 10%;
@@ -257,11 +260,10 @@ body {
     @include def-text($main-font, normal, 400, 12px, 18px, #5D6970);
     width: 85%;
   }
- 
 }
 
 .section-price{ 
-  padding: 10%;
+  padding: 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,6 +271,7 @@ body {
   .price--text{
     text-align: center;
     width: 55%;
+    margin: 10% 10% 0% 10%;
   }
   .price__title{
     @include def-text($main-font, normal, 500, 36px, 48px, #091133);
@@ -296,6 +299,10 @@ body {
     @include def-btn(#111B47, none, 2px);
     @include def-text($main-font, normal, 500, 14px, 24px, #FFFFFF);
     width: 20%;
+    @media screen and (max-width: $md){
+      width: 50%;
+    }
+    margin: 0% 0% 4% 0%;
   }
   .price-background__img{
     position: absolute;
@@ -311,4 +318,70 @@ body {
     background: #E7ECFF;
   }
 } 
+ 
+footer{ 
+  background: #E7ECFF;
+  .footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 10%;
+    flex-wrap: wrap;
+  }
+  .footer__text{
+    @include def-text($main-font, normal, 500, 14px, 24px, #939EA4);
+  }
+  .footer__title{
+    @include def-text($main-font, normal, 900, 26px, 38px, #37447E);
+  }
+  .footer__btn{
+    width: 110%;
+    @include def-btn(#111B47, none, 2px);
+    @include def-text($main-font, normal, 500, 12px, 18px, #FFFFFF);
+    @media screen and (max-width: $md){
+      width: 100%;
+    }
+  }
+  .footer-separator{
+    margin: 0% auto;
+    background: #CDD1D4;
+    height: 1px;
+    width: 90%;
+    justify-self: center;
+  }
+  .footer__links{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10% 2% 10%;
+    flex-wrap: wrap;
+  }
+  .links__pages{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    gap:10%;
+    @media screen and (max-width:$md){
+      flex-direction: column;
+    }
+  }
+  .pages__text{
+    @include def-text($main-font, normal, 400, 14px, 24px, #929ECC);
+    text-decoration: none;
+  }
+  .links__sm{
+    display: flex;
+    justify-content: space-between;
+    gap:10%;
+    width: 20%;
+    @media screen and (max-width:$md){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .sm__text{
+    color: #939EA4;
+    width:8px;
+    height: 16px;
+  }
+}
  
