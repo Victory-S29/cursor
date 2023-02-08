@@ -1,5 +1,9 @@
 @import "_functions.scss";
 
+.big-elements--section{
+  padding: 2% 4%
+}
+
 .big-elements--title{
   @include def_text('Inter', normal, 600, 25px, 30px, #2C2C2C);
   margin-bottom: 24px;
@@ -18,23 +22,75 @@
   gap: 19px 24px;
 }/*# sourceMappingURL=functions.css.map */
 
+.buttons-big--tabs{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 700px;
+  gap: 24px;
+}
 .big--tabs__row-1{
   display: flex;
   gap: 0;
-  margin-bottom: 24px;
 }
 
 .big--tabs__row-2{
   display: flex;
   gap: 0;
-  margin-bottom: 24px;
 }
  
 .big--tabs__row-3{
   display: flex;
   gap: 0;
+}
+
+.big-elements--section{
+  padding: 2% 4%
+}
+
+.big-elements--title{
+  @include def_text('Inter', normal, 600, 25px, 30px, #2C2C2C);
   margin-bottom: 24px;
 }
+
+.small-elements--section{
+  padding: 2% 4%
+}
+
+.buttons-small--section{
+  display: flex;
+  gap: 130px;
+}
+
+.buttons-small--click {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 700px;
+  gap: 19px 24px;
+}/*# sourceMappingURL=functions.css.map */
+ 
+.buttons-small--tabs{
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  gap: 24px;
+}
+.small--tabs__row-1{
+  display: flex;
+  gap: 0;
+}
+
+.small--tabs__row-2{
+  display: flex;
+  gap: 0;
+}
+ 
+.small--tabs__row-3{
+  display: flex;
+  gap: 0;
+}
+
 
 @import "./big-btns/big-btn-1";
 @import "./big-btns/_big-btn-2.scss";
@@ -56,4 +112,26 @@
 @import "./big-tabs/big-tab-6";
 @import "./big-tabs/big-tab-7";
 @import "./big-tabs/big-tab-8";
+
+
+@import "./small-btns/small-btn-1";
+@import "./small-btns/small-btn-2.scss";
+@import "./small-btns/small-btn-3.scss";
+@import "./small-btns/small-btn-4.scss";
+@import "./small-btns/small-btn-5.scss";
+@import "./small-btns/small-btn-6.scss";
+@import "./small-btns/small-btn-7.scss";
+@import "./small-btns/small-btn-8.scss";
+@import "./small-btns/small-btn-9.scss";
+@import "./small-btns/small-btn-10.scss";
+@import "./small-btns/small-btn-11.scss";
+@import "./small-btns/small-btn-12.scss";
+@import "./small-tabs/small-tab-1";
+@import "./small-tabs/small-tab-2";
+@import "./small-tabs/small-tab-3";
+@import "./small-tabs/small-tab-4";
+@import "./small-tabs/small-tab-5";
+@import "./small-tabs/small-tab-6";
+@import "./small-tabs/small-tab-7";
+@import "./small-tabs/small-tab-8";
  

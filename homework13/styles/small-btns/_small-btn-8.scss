@@ -1,0 +1,11 @@
+.small--item__eight-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    @include def_text('Inter', normal, 500, 15px, 18px, #18A0FB);
+    @include def_btn(8px 12px, #FFFFFF, 5px, 1px solid #18A0FB);
+    .small--btn-8__img{ 
+        @include def_small_btn_svg(20px, 20px);
+    }
+}

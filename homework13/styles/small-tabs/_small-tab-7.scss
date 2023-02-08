@@ -1,0 +1,5 @@
+.small--tabs__row-3--tab-2{
+    @include def_text('Inter', normal, 500, 15px, 18px, #2C2C2C);
+    @include def_btn(9px 24px, #FFFFFF, 0px, none);
+    box-shadow: inset 0px 1px 0px #E0E0E0, inset 0px -1px 0px #E0E0E0;
+}

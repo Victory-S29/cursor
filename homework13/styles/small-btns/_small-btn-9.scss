@@ -1,0 +1,11 @@
+.small--item__nineth-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    @include def_text('Inter', normal, 500, 15px, 18px, #FFFFFF);
+    @include def_btn(8px 12px, #FF3E1D, 5px, none);
+    .small--btn-9__img{ 
+        @include def_small_btn_svg(20px, 20px);
+    }
+}

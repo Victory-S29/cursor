@@ -16,3 +16,8 @@
         cursor: pointer;
     }
 }
+
+@mixin def_small_btn_svg($width, $height){
+    width:$width;
+    height: $height;
+}

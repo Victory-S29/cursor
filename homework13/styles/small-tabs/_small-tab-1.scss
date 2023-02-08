@@ -1,0 +1,7 @@
+.small--tabs__row-1--tab-1{
+    @include def_btn(9px 24px, #18A0FB, 5px 0px 0px 5px, none);
+    @include def_text('Inter', normal, 500, 15px, 18px, #FFFFFF);
+    .small--btn-11__img{ 
+        @include def_small_btn_svg(20px, 20px);
+    }
+}

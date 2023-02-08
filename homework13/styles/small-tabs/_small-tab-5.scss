@@ -1,0 +1,8 @@
+.small--tabs__row-2--tab-3{
+    @include def_btn(6px 12px, #FFFFFF, 0px 5px 5px 0px, 1px solid #E0E0E0);
+    .small--tabs__img-3{
+        @include def_small_btn_svg(24px, 24px);
+        stroke: #2C2C2C;
+        fill: #2C2C2C;
+    }
+}
