@@ -1,0 +1,4 @@
+.big--tabs__row-2--tab-1{
+    @include def_text('Inter', normal, 500, 15px, 18px, #FFFFFF);
+    @include def_btn( 14px 48px, #18A0FB, 5px 0px 0px 5px, none);
+} 

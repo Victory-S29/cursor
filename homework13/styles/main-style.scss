@@ -1,0 +1,59 @@
+@import "_functions.scss";
+
+.big-elements--title{
+  @include def_text('Inter', normal, 600, 25px, 30px, #2C2C2C);
+  margin-bottom: 24px;
+}
+
+.buttons-big--section{
+  display: flex;
+  gap: 130px;
+}
+
+.buttons-big--click {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 700px;
+  gap: 19px 24px;
+}/*# sourceMappingURL=functions.css.map */
+
+.big--tabs__row-1{
+  display: flex;
+  gap: 0;
+  margin-bottom: 24px;
+}
+
+.big--tabs__row-2{
+  display: flex;
+  gap: 0;
+  margin-bottom: 24px;
+}
+ 
+.big--tabs__row-3{
+  display: flex;
+  gap: 0;
+  margin-bottom: 24px;
+}
+
+@import "./big-btns/big-btn-1";
+@import "./big-btns/_big-btn-2.scss";
+@import "./big-btns/_big-btn-3.scss";
+@import "./big-btns/_big-btn-4.scss";
+@import "./big-btns/_big-btn-5.scss";
+@import "./big-btns/_big-btn-6.scss";
+@import "./big-btns/_big-btn-7.scss";
+@import "./big-btns/_big-btn-8.scss";
+@import "./big-btns/_big-btn-9.scss";
+@import "./big-btns/_big-btn-10.scss";
+@import "./big-btns/_big-btn-11.scss";
+@import "./big-btns/_big-btn-12.scss";
+@import "./big-tabs/big-tab-1";
+@import "./big-tabs/big-tab-2";
+@import "./big-tabs/big-tab-3";
+@import "./big-tabs/big-tab-4";
+@import "./big-tabs/big-tab-5";
+@import "./big-tabs/big-tab-6";
+@import "./big-tabs/big-tab-7";
+@import "./big-tabs/big-tab-8";
+ 

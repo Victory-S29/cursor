@@ -1,0 +1,4 @@
+.big--item__first-btn{
+    @include def_text('Inter', normal, 500, 15px, 18px, #FFFFFF);
+    @include def_btn(14px 36px, #18A0FB, 5px, none);
+}

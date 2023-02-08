@@ -1,0 +1,8 @@
+.big--item__sixth-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    @include def_text('Inter', normal, 500, 15px, 18px, #878787);
+    @include def_btn(12px 20px, rgba(224, 224, 224, 0.3), 5px, none);
+}

@@ -1,0 +1,4 @@
+.big--item__fourth-btn{
+    @include def_text('Inter', normal, 500, 15px, 18px, #18A0FB);
+    @include def_btn(14px 36px, #FFFFFF, 5px, 1px solid #18A0FB);
+}
