@@ -1,0 +1,14 @@
+.small--tags__row-1--tag-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    @include def_btn(6px 10px, #18A0FB, 5px, none);
+    @include def_text('Inter', normal, 500, 13px, 16px, #FFFFFF);
+    .small--tags__row-1--img-2{ 
+        @include def_small_btn_svg(8px, 8px);
+        fill: #FFFFFF;
+    }
+} 
+ 

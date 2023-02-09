@@ -1,0 +1,4 @@
+.small--tags__row-2--tag-1{
+    @include def_btn(6px 14px, rgba(224, 224, 224, 0.3), 5px, 1px solid #E0E0E0);
+    @include def_text('Inter', normal, 500, 13px, 16px, #2C2C2C);
+}
