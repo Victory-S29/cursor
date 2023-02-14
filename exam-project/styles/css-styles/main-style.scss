@@ -47,29 +47,33 @@ $xxl: 1400px;
             align-items: center;
             text-align: center;
         }
-    }
-    .header--text__title{
-        @include def_text('Playfair Display', normal, 400, 100px, 100px, #FFFFFF);
-    }
-    .header--text__subtitle{
-        @include def_text('Poppins', normal, 700, 20px, 22px, #D3BA74);
-        letter-spacing: 0.24em;
-        margin-bottom: 8%;
-    }
-    .header--text__paragraph{
-        @include def_text('Poppins', normal, 300, 16px, 24px, rgba(255, 255, 255, 0.8));
-        margin-bottom: 8%;
-    }
-    .header--text__btn{
-        @include def_btn(10px 16px, #FFFFFF, 4px, 1px solid #FFFFFF);
-        @include def_text('Poppins', normal, 400, 12px, 18px, #FFFFFF);
-        filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
-        width: 20%;
-        background: none;
-        @media (max-width:$md){
-            width: 50%;
+        .header--text__title{
+            @include def_text('Playfair Display', normal, 400, 100px, 100px, #FFFFFF);
+            @media (max-width:$md){
+                font-weight:300;
+            }
+        }
+        .header--text__subtitle{
+            @include def_text('Poppins', normal, 700, 20px, 22px, #D3BA74);
+            letter-spacing: 0.24em;
+            margin-bottom: 8%;
+        }
+        .header--text__paragraph{
+            @include def_text('Poppins', normal, 300, 16px, 24px, rgba(255, 255, 255, 0.8));
+            margin-bottom: 8%;
+        }
+        .header--text__btn{
+            @include def_btn(10px 16px, #FFFFFF, 4px, 1px solid #FFFFFF);
+            @include def_text('Poppins', normal, 400, 12px, 18px, #FFFFFF);
+            filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+            width: 20%;
+            background: none;
+            @media (max-width:$md){
+                width: 50%;
+            }
         }
     }
+
     .header-gradient{ 
         background: linear-gradient(0deg, #0A1E27 5%, rgba(10, 30, 39, 0.4) 70.68%, rgba(10, 30, 39, 0) 100.15%);
         height: 60%;
@@ -86,14 +90,14 @@ $xxl: 1400px;
     position: relative;
     .explore-section-bc{
         position: absolute;
-        top: -1%;
-        left: 3%;
+        top: 3%;
+        left: 2%;
         .explore-section-bc__item{
             @include def_text('Poppins', normal, 600, 180px, 24px, rgba(255, 255, 255, 0.13));
             line-height: 150%;
         }
         @media (max-width: $md) {
-          display: none;
+            display: none;
         }
     }
     .explore-section--main-part{
@@ -112,7 +116,7 @@ $xxl: 1400px;
                 position: relative;
                 display: inline-block;
                 width: 100%;
- 
+                margin-left: 10%;
                 &:before {
                     content: "";
                     width: 51px;
@@ -132,7 +136,6 @@ $xxl: 1400px;
             }
             .explore-section--text__title{
                 @include def_text('Playfair Display', normal, 400, 70px, 70px, #FFFFFF);
-         
             }
             .explore-section--text__paragraph{
                 @include def_text('Playfair Display', normal, 300, 16px, 24px, rgba(255, 255, 255, 0.8));
@@ -175,3 +178,85 @@ $xxl: 1400px;
  
     }
 } 
+
+.miss-section{
+    position: relative;
+    display: grid;
+    background-color: #0A1E27;
+    overflow: hidden;
+    padding: 2%;
+    grid-template-columns: 40% 60%;
+    gap: 10%;
+    .miss-section--text__img{
+        display: flex;
+        justify-content: left;
+        .section--text__img{@include def_imgs(100%, auto);}
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+
+    .miss-section-bc{
+        position: absolute;
+        top: 0%;
+        left: 41%;
+        .miss-section-bc__item{
+            @include def_text('Poppins', normal, 600, 180px, 24px, rgba(255, 255, 255, 0.13));
+            line-height: 150%;
+        }
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+    
+    .miss-section--text{
+        display: flex;
+        flex-direction: column;
+        margin: 12% 20% 0% 9.5%;
+        .miss-section--text__get-started{
+            @include def_text('Poppins', normal, 700, 14px, 22px, #D3BA74);
+            letter-spacing: 0.24em;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            margin-left: 11%;
+            &:before {
+                content: "";
+                width: 51px;
+                height: 2px;
+                position: absolute;
+                left: -55px;
+                top: 10px;
+                background: #D3BA74;
+            }
+            @media (max-width: $md) {
+                margin: 0% auto;
+                text-align: center;
+                &:before {
+                    width: 0px;
+                }
+            }
+        }
+        .miss-section--text__title{
+            @include def_text('Playfair Display', normal, 400, 70px, 70px, #FFFFFF);
+            margin-bottom: 3%;
+        }
+        .miss-section--text__paragraph{
+            width: 85%;
+            @include def_text('Playfair Display', normal, 300, 16px, 24px, rgba(255, 255, 255, 0.8));
+            @media (max-width: $md) {
+                width: 100%;
+            }
+        }
+        @media (max-width: $md) {
+            margin: 0% auto;
+            text-align: center;
+        }
+    }
+    @media (max-width: $md){
+        padding: 0% 2%;
+        grid-template-columns: 100%;
+        margin: 0% auto;
+ 
+    }
+}

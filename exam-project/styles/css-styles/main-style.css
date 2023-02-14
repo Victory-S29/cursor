@@ -52,7 +52,7 @@
     text-align: center;
   }
 }
-.header .header--text__title {
+.header .header--text .header--text__title {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
@@ -60,7 +60,12 @@
   line-height: 100px;
   color: #FFFFFF;
 }
-.header .header--text__subtitle {
+@media (max-width: 768px) {
+  .header .header--text .header--text__title {
+    font-weight: 300;
+  }
+}
+.header .header--text .header--text__subtitle {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -70,7 +75,7 @@
   letter-spacing: 0.24em;
   margin-bottom: 8%;
 }
-.header .header--text__paragraph {
+.header .header--text .header--text__paragraph {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
@@ -79,7 +84,7 @@
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 8%;
 }
-.header .header--text__btn {
+.header .header--text .header--text__btn {
   background-color: #FFFFFF;
   border-radius: 4px;
   padding: 10px 16px;
@@ -94,11 +99,11 @@
   width: 20%;
   background: none;
 }
-.header .header--text__btn:hover {
+.header .header--text .header--text__btn:hover {
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  .header .header--text__btn {
+  .header .header--text .header--text__btn {
     width: 50%;
   }
 }
@@ -118,8 +123,8 @@
 }
 .explore-section .explore-section-bc {
   position: absolute;
-  top: -1%;
-  left: 3%;
+  top: 3%;
+  left: 2%;
 }
 .explore-section .explore-section-bc .explore-section-bc__item {
   font-family: "Poppins";
@@ -158,6 +163,7 @@
   position: relative;
   display: inline-block;
   width: 100%;
+  margin-left: 10%;
 }
 .explore-section .explore-section--main-part .explore-section--text .explore-section--text__get-started:before {
   content: "";
@@ -236,5 +242,119 @@
   .explore-section .explore-section--galery .explore-section--galery__item {
     width: 30%;
     height: 30%;
+  }
+}
+
+.miss-section {
+  position: relative;
+  display: grid;
+  background-color: #0A1E27;
+  overflow: hidden;
+  padding: 2%;
+  grid-template-columns: 40% 60%;
+  gap: 10%;
+}
+.miss-section .miss-section--text__img {
+  display: flex;
+  justify-content: left;
+}
+.miss-section .miss-section--text__img .section--text__img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .miss-section .miss-section--text__img {
+    display: none;
+  }
+}
+.miss-section .miss-section-bc {
+  position: absolute;
+  top: 0%;
+  left: 41%;
+}
+.miss-section .miss-section-bc .miss-section-bc__item {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 180px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.13);
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .miss-section .miss-section-bc {
+    display: none;
+  }
+}
+.miss-section .miss-section--text {
+  display: flex;
+  flex-direction: column;
+  margin: 12% 20% 0% 9.5%;
+}
+.miss-section .miss-section--text .miss-section--text__get-started {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #D3BA74;
+  letter-spacing: 0.24em;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-left: 11%;
+}
+.miss-section .miss-section--text .miss-section--text__get-started:before {
+  content: "";
+  width: 51px;
+  height: 2px;
+  position: absolute;
+  left: -55px;
+  top: 10px;
+  background: #D3BA74;
+}
+@media (max-width: 768px) {
+  .miss-section .miss-section--text .miss-section--text__get-started {
+    margin: 0% auto;
+    text-align: center;
+  }
+  .miss-section .miss-section--text .miss-section--text__get-started:before {
+    width: 0px;
+  }
+}
+.miss-section .miss-section--text .miss-section--text__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 70px;
+  color: #FFFFFF;
+  margin-bottom: 3%;
+}
+.miss-section .miss-section--text .miss-section--text__paragraph {
+  width: 85%;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 768px) {
+  .miss-section .miss-section--text .miss-section--text__paragraph {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .miss-section .miss-section--text {
+    margin: 0% auto;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .miss-section {
+    padding: 0% 2%;
+    grid-template-columns: 100%;
+    margin: 0% auto;
   }
 }/*# sourceMappingURL=main-style.css.map */
