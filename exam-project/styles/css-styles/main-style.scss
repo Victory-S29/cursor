@@ -50,7 +50,9 @@ body{
         .header--text__title{
             @include def_text('Playfair Display', normal, 400, 100px, 100px, #FFFFFF);
             @media (max-width:$md){
-                font-weight:300;
+                font-weight: 300;
+                font-size: 50px;
+                line-height: 50px;
             }
         }
         .header--text__subtitle{
