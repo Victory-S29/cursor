@@ -116,7 +116,7 @@ $xxl: 1400px;
                 position: relative;
                 display: inline-block;
                 width: 100%;
-                margin-left: 10%;
+                margin-left: 11%;
                 &:before {
                     content: "";
                     width: 51px;
@@ -219,7 +219,7 @@ $xxl: 1400px;
             position: relative;
             display: inline-block;
             width: 100%;
-            margin-left: 11%;
+            margin-left: 10%;
             &:before {
                 content: "";
                 width: 51px;
@@ -258,5 +258,126 @@ $xxl: 1400px;
         grid-template-columns: 100%;
         margin: 0% auto;
  
+    }
+}
+
+.open-section{
+    background-color: #0A1E27;
+    overflow: hidden;
+    padding: 2%;
+    position: relative;
+    .open-section-bc{
+        position: absolute;
+        top: 3%;
+        left: 2%;
+        .open-section-bc__item{
+            @include def_text('Poppins', normal, 600, 180px, 24px, rgba(255, 255, 255, 0.13));
+            line-height: 150%;
+        }
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+    .open-section--main-part{
+        display: grid;
+        grid-template-columns: 55% 45%;
+        gap: 0%;
+        margin-bottom: 5%;
+        .open-section--text{
+            display: flex;
+            flex-direction: column;
+            margin-top: 18%;
+            margin-left: 26%;
+            .open-section--text__get-started{
+                @include def_text('Poppins', normal, 700, 14px, 22px, #D3BA74);
+                letter-spacing: 0.24em;
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                margin-left: 13%;
+                &:before {
+                    content: "";
+                    width: 51px;
+                    height: 2px;
+                    position: absolute;
+                    left: -55px;
+                    top: 10px;
+                    background: #D3BA74;
+                }
+                @media (max-width: $md) {
+                    margin: 0% auto;
+                    text-align: center;
+                    &:before {
+                        width: 0px;
+                    }
+                }
+            }
+            .open-section--text__title{
+                width: 110%;
+                @include def_text('Playfair Display', normal, 400, 70px, 70px, #FFFFFF);
+            }
+            .open-section--text__paragraph{
+                width: 91%;
+                @include def_text('Playfair Display', normal, 300, 16px, 24px, rgba(255, 255, 255, 0.8));
+            }
+            @media (max-width: $md) {
+                margin: 0% auto;
+                text-align: center;
+            }
+        }
+        .open-section--text__img{
+            display: flex;
+            justify-content: right;
+           .section--text__img{@include def_imgs(90%, auto);}
+        }
+        @media (max-width: $md) {
+            grid-template-columns: 100%;
+            .open-section--text__img{
+              display: none;
+            }
+        }
+    }
+    .open-section--galery{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+         
+        flex-wrap: wrap;
+        margin: 1% auto;
+        @media (max-width: $xl) {
+            justify-content:center;
+            gap: 10%;
+        }
+        .open-section--galery__item{
+            margin-bottom: 1%;
+            @media (max-width: $md) {
+                @include def_imgs(30%, 30%);
+            }
+        }
+ 
+    }
+} 
+
+
+.numbers-section{
+    display: flex;
+    background-color: #0A1E27;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap:8%;
+    .numbers-section--galery__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .galery__item-number{
+        @include def_text('Poppins', normal, 600, 100px, 110px, rgba(255, 255, 255, 0.13));
+    }
+    .galery__item-place{
+        @include def_text('Poppins', normal, 700, 14px, 22px, #D3BA74);
+        letter-spacing: 0.24em;
     }
 }
