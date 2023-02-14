@@ -1,0 +1,23 @@
+@mixin def_text($font-family, $font-style, $font-weight, $font-size, $line-height, $color){
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin def_btn($padding, $background-color, $border-radius, $border){
+    background-color: $background-color;
+    border-radius: $border-radius;
+    padding:$padding;
+    border: $border; 
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@mixin def_imgs($width, $height){
+    width:$width;
+    height: $height;
+}

@@ -1,0 +1,74 @@
+@import "_def-file.scss";
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+.header{
+    position: relative;
+    overflow: hidden;
+    padding: 0%;
+    @media (max-width:$md){ 
+        background-color: #0A1E27;
+    }
+    .header-img{
+        @include def_imgs(110%, 145%);
+        z-index: -1;
+        position: absolute;
+        top: -20%;
+        @media (max-width:$md){
+          display: none;
+        }
+    }
+
+    .header--title{ 
+        @include def_text('Major Mono Display', normal, 400, 32px, 34px, #FFFFFF);
+        margin: 3% 10%;
+        @media (max-width:$md){
+            text-align: center;
+        }
+    }
+
+    .header--text{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 10%;
+        z-index: 1;
+        margin-bottom: 40%;
+        @media (max-width:$md){
+            width: 90%;
+            margin: 10% auto;
+            margin-bottom: 20%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .header--text__title{
+        @include def_text('Playfair Display', normal, 400, 100px, 100px, #FFFFFF);
+    }
+    .header--text__subtitle{
+        @include def_text('Poppins', normal, 700, 20px, 22px, #D3BA74);
+        letter-spacing: 0.24em;
+        margin-bottom: 8%;
+    }
+    .header--text__paragraph{
+        @include def_text('Poppins', normal, 300, 16px, 24px, rgba(255, 255, 255, 0.8));
+        margin-bottom: 8%;
+    }
+    .header--text__btn{
+        @include def_btn(10px 16px, #FFFFFF, 4px, 1px solid #FFFFFF);
+        @include def_text('Poppins', normal, 400, 12px, 18px, #FFFFFF);
+        filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+        width: 20%;
+        background: none;
+        @media (max-width:$md){
+            width: 50%;
+        }
+    }
+}
+ 
+// background: linear-gradient(0deg, #0A1E27 85.81%, rgba(10, 30, 39, 0.4) 94.68%, rgba(10, 30, 39, 0) 100.15%);
