@@ -15,9 +15,9 @@ body {
 .header .header-img {
   width: 110%;
   height: 105%;
-  z-index: -1;
   position: absolute;
   top: -2%;
+  z-index: -1;
 }
 @media (max-width: 768px) {
   .header .header-img {
@@ -452,9 +452,16 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 @media (max-width: 768px) {
+  .open-section .open-section--main-part .open-section--text .open-section--text__paragraph {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
   .open-section .open-section--main-part .open-section--text {
+    width: 100%;
     margin: 0% auto;
     text-align: center;
+    align-items: center;
   }
 }
 .open-section .open-section--main-part .open-section--text__img {
@@ -624,6 +631,7 @@ footer .footer-list {
   display: flex;
   width: 30%;
   justify-content: space-between;
+  list-style: none;
 }
 footer .footer-list .footer-list__item {
   width: 24px;

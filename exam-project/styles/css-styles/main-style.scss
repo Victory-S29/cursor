@@ -9,6 +9,7 @@ $xxl: 1400px;
 body{
     background-color: #0A1E27;
 }
+
 .header{
     position: relative;
     overflow: hidden;
@@ -18,9 +19,9 @@ body{
     }
     .header-img{
         @include def_imgs(110%, 105%);
-        z-index: -1;
         position: absolute;
         top: -2%;
+        z-index: -1;
         @media (max-width:$md){
           display: none;
         }
@@ -75,7 +76,6 @@ body{
             }
         }
     }
-
     .header-gradient{ 
         background: linear-gradient(0deg, #0A1E27 5%, rgba(10, 30, 39, 0.4) 70.68%, rgba(10, 30, 39, 0) 100.15%);
         height: 60%;
@@ -164,7 +164,6 @@ body{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-         
         flex-wrap: wrap;
         margin: 1% auto;
         @media (max-width: $xl) {
@@ -197,7 +196,6 @@ body{
             display: none;
         }
     }
-
     .miss-section-bc{
         position: absolute;
         top: 0%;
@@ -210,7 +208,6 @@ body{
             display: none;
         }
     }
-    
     .miss-section--text{
         display: flex;
         flex-direction: column;
@@ -259,7 +256,6 @@ body{
         padding: 0% 2%;
         grid-template-columns: 100%;
         margin: 0% auto;
- 
     }
 }
 
@@ -321,10 +317,15 @@ body{
             .open-section--text__paragraph{
                 width: 91%;
                 @include def_text('Playfair Display', normal, 300, 16px, 24px, rgba(255, 255, 255, 0.8));
+                @media (max-width: $md) {
+                    text-align: center;
+                }
             }
-            @media (max-width: $md) {
+            @media (max-width: $md){
+                width: 100%;
                 margin: 0% auto;
                 text-align: center;
+                align-items: center;
             }
         }
         .open-section--text__img{
@@ -344,7 +345,6 @@ body{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-         
         flex-wrap: wrap;
         margin: 1% auto;
         @media (max-width: $xl) {
@@ -357,10 +357,8 @@ body{
                 @include def_imgs(30%, 30%);
             }
         }
- 
     }
 } 
-
 
 .numbers-section{
     display: flex;
@@ -392,16 +390,13 @@ body{
     .more-section-borders{
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
         padding: 5% 0%;
     } 
- 
     .more-section--text{
-
         margin-left: 2%;
         width: 40%;
         margin-bottom: 1%;
@@ -428,7 +423,6 @@ body{
         padding: 2%;
         display: flex;
         justify-content: center;
-
         .more-section--img__item{
             @media (max-width: $xl){
                 @include def_imgs(70%, auto);
@@ -453,6 +447,7 @@ footer{
         display: flex;
         width: 30%;
         justify-content: space-between;
+        list-style: none;
         .footer-list__item{
             width: 24px;
             color: rgba(255, 255, 255, 0.5);
